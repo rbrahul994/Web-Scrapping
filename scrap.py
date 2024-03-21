@@ -20,8 +20,6 @@ rows = tables[0].find_all('tr')
 
 for row in rows:
     if count < 50 :
-        if count in [35, 36, 37]:
-            import pdb; pdb.set_trace()
         col = row.find_all('td')
         if len(col)!= 0:
             data_dict = {"Average Rank": int(col[0].contents[0]),
